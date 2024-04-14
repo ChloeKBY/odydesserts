@@ -1,0 +1,511 @@
+
+
+body, html {
+    margin :0;
+    padding: 0;
+    font-family: "Kalam",cursive;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+/* Hide checkbox */
+#menu-toggle {
+    display: none;
+}
+
+/* Style for the menu button */
+.menu-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 10px;
+    color: #fff;
+    background-color: #333;
+    cursor: pointer;
+    z-index: 1001;
+    transition: transform 0.3s ease; /* Transition for menu button */
+}
+
+/* Style for the menu container */
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0px; /* Adjust to hide the menu off-screen initially */
+    width: 200px; /* Adjust the width as needed */
+    height: 100vh;
+    background-color: #555; /* Change the color as needed */
+    z-index: 1000;
+    transform: translateX(-200px);
+    transition: transform 0.3s ease; /* Transition for menu container */
+}
+
+/* Style for the menu items */
+.menu ul {
+    list-style: none;
+    padding: 20px 0;
+    margin: 0;
+}
+
+.menu ul li {
+    padding: 10px 20px;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Apply transform to show the menu when checkbox is checked */
+#menu-toggle:checked + .menu-button {
+    transform: translateX(145px); /* Move the menu button along with the menu */
+}
+
+#menu-toggle:checked ~ .menu-container {
+    transform: translateX(0);
+}
+
+/* Adjust content area to make space for the menu */
+#menu-toggle:checked ~ .menu-container + .content {
+    margin-left: 200px; /* Adjust to match menu width */
+    padding: 20px;
+}
+
+
+/* Header section */
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(144, 97, 50, 0.45),rgba(144, 97, 50, 0.45),rgba(144, 134, 87, 0.45),rgba(181, 163, 110, 0.45)),url(images/banner.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 22px;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 4px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    border-color: #f7b1d0;
+    background: #fdd1e4;
+    color: #ffffff;
+    transition: all 0.8s ease;
+}
+
+
+
+/* desserts */
+.desserts{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.dessert-col{
+    flex-basis: 30%;
+    background: #c9a0729d;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h2{
+    text-align: center;
+    padding: 10px 0;
+}
+.dessert-col:hover{
+    box-shadow: 0 0 20px 0px  rgb(81, 52, 1);
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+
+
+
+p{
+    color: #ffffff;
+    padding: 10px 0;
+}
+img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* pourquoi? */
+.Pourquoi{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.Pourquoi-col {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.Pourquoi-col img{
+        width: 100%;
+        display:block;
+}
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s ease;
+
+}
+
+
+.layer:hover{
+    background: #5f966bc0;
+}
+ .layer h3{
+    margin-top: 10px;
+width: 100%;
+font-weight: 500;
+color: #fff;
+font-size: 26px;
+bottom: 0;
+left: 50%;
+transform: translateX(-50%);
+position: absolute;
+opacity: 0;
+transition: 0.5s;
+}
+
+.layer:hover h3{
+    bottom: 51%;
+    opacity: 1;
+}
+
+.layer p{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 20px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+    }
+    
+    .layer:hover p{
+        bottom: 32%;
+        opacity: 1;
+    }
+    
+    .layer h2{
+        width: 100%;
+        font-weight: 500;
+        color: #f6cd93;
+        font-size: 24px;
+        bottom: 32%;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        opacity: 100%;
+        transition: 0.5s;
+        }
+        
+        .layer:hover h2{
+            bottom: 32%;
+            opacity: 0;
+        }
+
+
+        p1{
+    color: #000000;
+    padding: 10px 0;
+}
+
+/* Comment? */
+.comment{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 120px;
+}
+.comment-col {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.comment-col img{
+        width: 100%;
+        display:block;
+        border: #f7b1d0 4px solid;
+}
+.comment-col p{
+    padding: 0;
+}
+.comment-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* honorable mentions */
+.honorables{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+.honorables-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    text-align: left;
+    background: #a3d7b7;
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: self-endxs;
+}
+.honorables-col img{
+    height: 40px;
+    width: 40px;
+    margin-left: 5px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+.honorables-col p{
+    padding:0;
+}
+.honorables-col h3{
+    margin-top: 15px;
+    text-align: left;
+}
+/* Recipes link at end of page*/
+.recettes {
+    position: relative; /* Required for absolute positioning */
+    width: 100%;
+    text-align: center;
+}
+
+.recettes .text-box2 {
+    position: relative; /* Required for absolute positioning */
+    z-index: 1; /* Ensure text content appears above the button */
+}
+
+.recettes img {
+    width: 100%; /* Ensure image spans the full width of the container */
+    display: block;
+    border-radius: 35px;
+    border: 24px solid #fff;
+    box-sizing: border-box;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    border: 4px solid #949494;
+    transform: translateX(-50%);
+    bottom: 175px;
+    left: 50%;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: absolute;
+    cursor: pointer;
+}
+.button:hover{
+    border-color: #ffffff;
+    background: #959595;
+    color: #ffffff;
+    transition: all 0.8s ease;
+}
+@media screen and (min-width: 700px) {
+    .button {
+        bottom: 300px;
+        padding: 20px 40px; /* Adjust padding for larger screens */
+        font-size: 30px; /* Increase font size for larger screens */
+        margin-top: 40px; /* Add margin to the top for spacing */
+    }
+}
+@media screen and (min-width: 700px) {
+    .recettes img {
+        width: 90%; /* Adjust image width for larger screens */
+        max-width: none; /* Set maximum width for the image */
+        height: 600px;
+        margin: auto; /* Center the image horizontally */
+    }
+}
+/* footer */
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.footer credits p1{
+text-align: center;
+}
+
+/* footer icons */
+.footer-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.footer-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-icons a {
+    color: #336c40; /* Change icon color */
+    font-size: 24px; /* Change icon size */
+}
+
+/* OWO RECIPES TIMEEE */
+
+.subheader{
+    margin-top: 0;
+    height: 45vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(197, 146, 146, 0.672),rgba(197, 146, 146, 0.672)),url(images/recettesbanner.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+
+}
+
+.text-box3{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box3 h1{
+    font-size: 46px;
+}
+.recettes{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.recettes-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.recettes-col img{
+    width: 100%;
+    max-height: 45vh;
+}
+.recettes-col h1{
+    padding-top: 0;
+}
+.recettes-col p1{
+    padding:15px 0 25px;
+}
+
+.button1 {
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    border: 4px solid #8a6b4f;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.button1:hover {
+    border-color: #cca481;
+    background: #e9ca97;
+    color: #ffffff;
+    transition: all 0.4s ease;
+}
+.subheader1{
+    margin-top: 0;
+    height: 45vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(240, 207, 173, 0.672),rgba(240, 207, 173, 0.672)),url(images/creditsbanner.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+
+}
+
+.text-box1{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box1 h1{
+    font-size: 46px;
+}
+
+
+
+
+
+
