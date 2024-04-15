@@ -506,6 +506,48 @@ text-align: center;
     font-size: 46px;
 }
 
+/*--------------Tartes au fraises html-------------*/
+/* Header section */
+.header2{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(144, 97, 50, 0.45),rgba(144, 97, 50, 0.45),rgba(144, 134, 87, 0.45),rgba(181, 163, 110, 0.45)),url(tarteaufraisesimg/header.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.text-box1{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 22px;
+}
+.centered-header {
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .containerimg {
+    text-align: center; /* Center-align the content */
+    width: 200px;
+    height: 150px;
+  }
+  
+  img {
+    width: 100%; /* Set the width of the image to fill its container */
+    margin-top: 20px; /* Add some space between the text and the image */
+  }
 
 
 
