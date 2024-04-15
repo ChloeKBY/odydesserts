@@ -74,33 +74,32 @@ html {
     padding: 20px;
 }
 
+/* ----------sub menu------------*/
+<style>
+    .submenu-toggle {
+        position: relative;
+    }
 
-.sub-menu-toggle {
-    display: none;
-}
+    .submenu-toggle .submenu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: none;
+        background-color: #555;
+        padding: 10px;
+        border-radius: 5px;
+    }
 
-/* Style for submenu */
-.sub-menu {
-    list-style: none;
-    padding-left: 0;
-    margin-top: 10px;
-    display: none;
-}
+    .submenu-toggle .submenu-toggle-checkbox:checked + .submenu {
+        display: block;
+    }
+</style>
 
-.sub-menu li {
-    padding: 8px 20px;
-}
-
-.sub-menu li a {
-    color: #fff;
-    text-decoration: none;
-    display: block;
-}
-
-/* Apply styles for submenu when toggle is checked */
-#recettes-toggle:checked + label + .sub-menu {
-    display: block;
-}
+<script>
+    function closeSubmenu() {
+        document.getElementById("recettes-toggle").checked = false;
+    }
+</script>
 
 
 /* Header section */
