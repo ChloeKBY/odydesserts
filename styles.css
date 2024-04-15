@@ -171,12 +171,13 @@ img{
 }
 
 /* pourquoi? */
-.Pourquoi{
+.Pourquoi {
     width: 80%;
     margin: auto;
     text-align: center;
     padding-top: 50px;
 }
+
 .Pourquoi-col {
     flex-basis: 32%;
     border-radius: 10px;
@@ -184,10 +185,12 @@ img{
     position: relative;
     overflow: hidden;
 }
-.Pourquoi-col img{
-        width: 100%;
-        display:block;
+
+.Pourquoi-col img {
+    width: 100%;
+    display: block;
 }
+
 .layer {
     background: transparent;
     height: 100%;
@@ -195,74 +198,47 @@ img{
     position: absolute;
     top: 0;
     left: 0;
-    transition: 0.5s ease;
-
+    transition: background-color 0.5s ease;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-
-.layer:hover{
-    background: #5f966bc0;
-}
- .layer h3{
-    margin-top: 10px;
-width: 100%;
-font-weight: 500;
-color: #fff;
-font-size: 26px;
-bottom: 0;
-left: 50%;
-transform: translateX(-50%);
-position: absolute;
-opacity: 0;
-transition: 0.5s;
+.Pourquoi-col:hover .layer {
+    background: rgba(95, 150, 107, 0.75); /* Adjust the background color and opacity */
 }
 
-.layer:hover h3{
-    bottom: 51%;
+.layer-content {
+    position: absolute;
+    bottom: 20px; /* Adjust the spacing from the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%; /* Adjust the width */
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.Pourquoi-col:hover .layer-content {
     opacity: 1;
 }
 
-.layer p{
-    width: 100%;
-    font-weight: 500;
+.layer-content h3 {
+    font-size: 24px; /* Adjust the font size */
     color: #fff;
-    font-size: 20px;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
-    opacity: 0;
-    transition: 0.5s;
-    }
-    
-    .layer:hover p{
-        bottom: 32%;
-        opacity: 1;
-    }
-    
-    .layer h2{
-        width: 100%;
-        font-weight: 500;
-        color: #f6cd93;
-        font-size: 24px;
-        bottom: 32%;
-        left: 50%;
-        transform: translateX(-50%);
-        position: absolute;
-        opacity: 100%;
-        transition: 0.5s;
-        }
-        
-        .layer:hover h2{
-            bottom: 32%;
-            opacity: 0;
-        }
-
-
-        p1{
-    color: #000000;
-    padding: 10px 0;
+    margin-bottom: 10px;
 }
+
+.layer-content h2 {
+    font-size: 20px; /* Adjust the font size */
+    color: #f6cd93;
+    margin-bottom: 10px;
+}
+
+.layer-content p {
+    font-size: 18px; /* Adjust the font size */
+    color: #fff;
+    margin-bottom: 10px;
+}
+
 
 /* Comment? */
 .comment{
