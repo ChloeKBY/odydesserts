@@ -171,69 +171,97 @@ img{
 }
 
 /* pourquoi? */
-.Pourquoi {
-    width: 90%; /* Adjust width for better responsiveness */
+.Pourquoi{
+    width: 80%;
     margin: auto;
     text-align: center;
     padding-top: 50px;
 }
-
 .Pourquoi-col {
-    flex-basis: 100%; /* Ensure full width on smaller screens */
+    flex-basis: 32%;
     border-radius: 10px;
     margin-bottom: 30px;
     position: relative;
     overflow: hidden;
 }
-
-.Pourquoi-col img {
-    width: 100%;
-    display: block;
-    border-radius: 10px; /* Ensure rounded corners for images */
+.Pourquoi-col img{
+        width: 100%;
+        display:block;
 }
-
 .layer {
-    background: rgba(95, 150, 107, 0.75); /* Adjust background color and opacity */
+    background: transparent;
+    height: 100%;
+    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-    transition: background-color 0.5s ease;
-    opacity: 0;
+    transition: 0.5s ease;
+
 }
 
-.Pourquoi-col:hover .layer {
+
+.layer:hover{
+    background: #5f966bc0;
+}
+ .layer h3{
+    margin-top: 10px;
+width: 100%;
+font-weight: 500;
+color: #fff;
+font-size: 26px;
+bottom: 0;
+left: 50%;
+transform: translateX(-50%);
+position: absolute;
+opacity: 0;
+transition: 0.5s;
+}
+
+.layer:hover h3{
+    bottom: 57%;
     opacity: 1;
 }
 
-.layer-content {
-    position: absolute;
-    bottom: 20px; /* Adjust spacing from the bottom */
+.layer p{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 20px;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 90%; /* Adjust width */
-    text-align: center; /* Center align content */
-}
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+    }
+    
+    .layer:hover p{
+        bottom: 32%;
+        opacity: 1;
+    }
+    
+    .layer h2{
+        width: 100%;
+        font-weight: 500;
+        color: #f6cd93;
+        font-size: 24px;
+        bottom: 32%;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        opacity: 100%;
+        transition: 0.5s;
+        }
+        
+        .layer:hover h2{
+            bottom: 32%;
+            opacity: 0;
+        }
 
-.layer-content h3 {
-    font-size: 24px; /* Adjust font size */
-    color: #fff;
-    margin-bottom: 52px;
-}
 
-.layer-content h2 {
-    font-size: 20px; /* Adjust font size */
-    color: #f6cd93;
-    margin-bottom: 10px;
-}
-
-.layer-content p {
-    font-size: 18px; /* Adjust font size */
-    color: #fff;
-    margin-bottom: 10px;
+        p1{
+    color: #000000;
+    padding: 10px 0;
 }
 
 
