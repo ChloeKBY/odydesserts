@@ -236,7 +236,7 @@ transition: 0.5s;
     }
     
     .layer:hover p{
-        bottom: 32%;
+        bottom: 25%;
         opacity: 1;
     }
     
