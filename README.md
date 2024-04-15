@@ -1,4 +1,4 @@
-Hey hey!!
+Hey hey!
 
 English at bottom, french starts here.
 
