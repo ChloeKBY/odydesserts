@@ -563,4 +563,13 @@ text-align: center;
 }
 
 
+/* recette 3 */
 
+.header5{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(255, 221, 0, 0.45),rgba(255, 221, 0, 0.45)),url(lemonbarsimg/header.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
