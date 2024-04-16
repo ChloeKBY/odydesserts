@@ -538,7 +538,7 @@ text-align: center;
     position: relative;
 }
 
-.text-box1{
+.text-box4{
     width: 90%;
     color: #fff;
     position: absolute;
@@ -547,10 +547,10 @@ text-align: center;
     transform: translate(-50%,-50%);
     text-align: center;
 }
-.text-box h1{
+.text-box h5{
     font-size: 62px;
 }
-.text-box p{
+.text-box p3{
     margin: 10px 0 40px;
     font-size: 22px;
 }
