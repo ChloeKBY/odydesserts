@@ -13,7 +13,9 @@ html {
 
 
 /* Hide checkbox */
-#menu-toggle {
+/* Hide the checkbox input */
+#menu-toggle,
+.submenu-toggle .submenu-toggle-checkbox {
     display: none;
 }
 
