@@ -91,7 +91,7 @@ html {
         border-radius: 5px;
     }
 
-    .submenu-toggle-checkbox:checked ~ .submenu {
+    .submenu-toggle-checkbox:checked + .submenu {
         display: block;
     }
 </style>
