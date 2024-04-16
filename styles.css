@@ -76,27 +76,6 @@ html {
     padding: 20px;
 }
 
-/*--------sub menu--------*/
-
-<style>
-    .submenu-toggle {
-        position: relative;
-    }
-
-    .submenu-toggle .submenu {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        display: none;
-        background-color: #555;
-        padding: 10px;
-        border-radius: 5px;
-    }
-
-    .submenu-toggle-checkbox:checked + .submenu {
-        display: block;
-    }
-</style>
 
 /* Header section */
 .header{
