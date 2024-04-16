@@ -74,7 +74,8 @@ html {
     padding: 20px;
 }
 
-/* ----------sub menu------------*/
+/*--------sub menu--------*/
+
 <style>
     .submenu-toggle {
         position: relative;
@@ -90,17 +91,10 @@ html {
         border-radius: 5px;
     }
 
-    .submenu-toggle .submenu-toggle-checkbox:checked + .submenu {
+    .submenu-toggle-checkbox:checked ~ .submenu {
         display: block;
     }
 </style>
-
-<script>
-    function closeSubmenu() {
-        document.getElementById("recettes-toggle").checked = false;
-    }
-</script>
-
 
 /* Header section */
 .header{
