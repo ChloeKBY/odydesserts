@@ -1,4 +1,4 @@
-Hey hey!
+Hey hey! All the updates are in english just because it's my first language.
 
 English at bottom, french starts here.
 
@@ -12,3 +12,4 @@ This is my first time making a website on top of having never uploaded a project
 It was a ton of fun but also a lot of dumb troubleshooting that could've been solved in 25 minutes yet it took me 2 hours. XD
 I still have a ton to learn but this will do for a small school project.
 I apologize for the fact that this is in french. I did not have time to translate the website to english :/
+All the updates are in english just because it's my first language.
