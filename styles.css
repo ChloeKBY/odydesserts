@@ -337,7 +337,7 @@ transition: 0.5s;
 
 .recettes .text-box2 {
     position: relative; /* Required for absolute positioning */
-    z-index: 1; /* Ensure text content appears above the button */
+    z-index: 2; /* Ensure text content appears above the button */
 }
 
 .recettes img {
