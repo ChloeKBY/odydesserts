@@ -337,7 +337,7 @@ transition: 0.5s;
 
 .recettes .text-box2 {
     position: relative; /* Required for absolute positioning */
-    z-index: 2; /* Ensure text content appears above the button */
+    z-index: 99; /* Ensure text content appears above the button */
 }
 
 .recettes img {
@@ -361,6 +361,7 @@ transition: 0.5s;
     background: transparent;
     position: absolute;
     cursor: pointer;
+    z-index: 3; /* added this to troubleshoot the button not showing up */
 }
 .button:hover{
     border-color: #ffffff;
