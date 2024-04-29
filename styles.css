@@ -348,7 +348,7 @@ transition: 0.5s;
     box-sizing: border-box;
 }
 
-.button {
+.buttonR {
     display: inline-block;
     text-decoration: none;
     color: #000000;
@@ -370,7 +370,7 @@ transition: 0.5s;
     transition: all 0.8s ease;
 }
 @media screen and (min-width: 700px) {
-    .button {
+    .buttonR {
         bottom: 300px;
         padding: 20px 40px; /* Adjust padding for larger screens */
         font-size: 30px; /* Increase font size for larger screens */
