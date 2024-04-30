@@ -528,17 +528,19 @@ text-align: center;
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
+    font-size: 80px;
 }
 .text-box h5{
-    font-size: 500px;
+    font-size: 80px;
 }
 .text-box p6{
     margin: 10px 0 40px;
-    font-size: 500px;
+    font-size: 80px;
 }
 .centered-header {
     text-align: center;
     font-weight: bold;
+    font-size: 80px;
   }
   
   .containerimg {
