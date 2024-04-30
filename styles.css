@@ -363,7 +363,7 @@ transition: 0.5s;
     cursor: pointer;
     z-index: 3; /* added this to troubleshoot the button not showing up */
 }
-.button:hover{
+.buttonR:hover{
     border-color: #ffffff;
     background: #959595;
     color: #ffffff;
