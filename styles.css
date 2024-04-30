@@ -511,40 +511,68 @@ text-align: center;
 
 /*--------------Tartes au fraises html-------------*/
 /* Header section */
-.header2 {
+.header2{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(144, 97, 50, 0.45), rgba(144, 97, 50, 0.45), rgba(144, 134, 87, 0.45), rgba(181, 163, 110, 0.45)), url(tarteaufraisesimg/header.jpg);
+    background-image: linear-gradient(rgba(144, 97, 50, 0.45),rgba(144, 97, 50, 0.45),rgba(144, 134, 87, 0.45),rgba(181, 163, 110, 0.45)),url(tarteaufraisesimg/header.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
 }
-
-.text-box4 {
+.text-box4{
     width: 90%;
     color: #fff;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%,-50%);
     text-align: center;
+    font-size: 80px;
 }
-
-.text-box4 h5 {
-    font-size: 80px; /* Adjust the font size for the header */
-    margin: 0; /* Remove any default margin */
+.text-box h5{
+    font-size: 500px;
+    font-size: 80px;
 }
-
-.text-box4 p6 {
+.text-box p6{
     margin: 10px 0 40px;
-    font-size: 40px; /* Adjust the font size for the paragraph */
+    font-size: 500px;
+    font-size: 80px;
 }
+.centered-header {
+    text-align: center;
+    font-weight: bold;
+    font-size: 80px;
+  }
 
-
-
-
+  .containerimg {
+    text-align: center; /* Center-align the content */
+    width: 200px;
+    height: 150px;
+  }
+  
+  img {
+    width: 100%; /* Set the width of the image to fill its container */
+    margin-top: 20px; /* Add some space between the text and the image */
+  }
+/*recette 2, les tartes a main, en francais */
+.header3{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(144, 97, 50, 0.45),rgba(247, 141, 34, 0.45),rgba(247, 141, 34, 0.45)),url(creamcheeseimg/header.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+/* recette 3 */
+.header5{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(255, 221, 0, 0.45),rgba(255, 221, 0, 0.45)),url(lemonbarsimg/header.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
 /* recette 4 */
-
 .header6{
     min-height: 100vh;
     width: 100%;
