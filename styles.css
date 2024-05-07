@@ -597,7 +597,6 @@ text-align: center;
 }
 .text-box p6{
     margin: 10px 0 40px;
-    font-size: 500px;
     font-size: 25px;
 }
 .centered-header {
@@ -605,6 +604,17 @@ text-align: center;
     font-weight: bold;
     font-size: 25px;
   }
-    
+    .text-box1{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box1 h1{
+    font-size: 25px;
+}
 }
     
