@@ -385,6 +385,14 @@ transition: 0.5s;
         margin: auto; /* Center the image horizontally */
     }
 }
+
+.qrcode img {
+    width: 80%; /* Ensure image spans the full width of the container */
+    display: block;
+    border-radius: 35px;
+    border: 24px solid #fff;
+    box-sizing: border-box;
+}
 /* footer */
 .footer{
     width: 100%;
